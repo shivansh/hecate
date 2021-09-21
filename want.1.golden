@@ -1,11 +1,19 @@
 workspace(name = "github_com_foo")
 
-# Modified after first commit - should not be deleted.
+# should not be deleted - modified after copy
 http_archive(
     name = "pqr",
     sha256 = "uvw",
     urls = [
         "https://u.v",
+    ],
+)
+
+http_archive(
+    name = "abc",
+    sha256 = "baz",
+    urls = [
+        "https://x.y",
     ],
 )
 
