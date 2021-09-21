@@ -7,3 +7,12 @@ http_archive(
         "https://x.y",
     ],
 )
+
+# Added after first commit - should not be deleted.
+http_archive(
+    name = "def",
+    sha256 = "qux",
+    urls = [
+        "https://u.v",
+    ],
+)
