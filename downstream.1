@@ -1,0 +1,17 @@
+workspace(name = "github_com_foo")
+
+http_archive(
+    name = "abc",
+    sha256 = "baz",
+    urls = [
+        "https://x.y",
+    ],
+)
+
+http_archive(
+    name = "def",
+    sha256 = "ff34376",
+    urls = [
+        "https://x.y",
+    ],
+)
