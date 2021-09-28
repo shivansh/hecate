@@ -1,18 +1,18 @@
 workspace(name = "github_com_foo")
 
+http_archive(
+    name = "abc",
+    sha256 = "baz",
+    urls = [
+        "https://x.y",
+    ],
+)
+
 # Added after first commit - should not be deleted.
 http_archive(
     name = "def",
     sha256 = "qux",
     urls = [
         "https://u.v",
-    ],
-)
-
-http_archive(
-    name = "abc",
-    sha256 = "baz",
-    urls = [
-        "https://x.y",
     ],
 )
